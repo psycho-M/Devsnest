@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Letter</title>
+</head>
+<style>
+
+    root {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: antiquewhite;
+    }
+
+    .header {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 34px;
+        background-color:azure;
+        border-radius: 10px;
+        padding: 10px;
+        position: sticky;
+    }
+
+    .letter {
+        background-color:wheat;
+        border-radius: 10px;
+        padding: 10px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .address, .salutation {
+        background-color: beige;
+        padding:5px;
+        border-radius:10px;
+        margin: 5px;
+    }
+
+    .mainScript {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: darkgoldenrod;
+        margin: 5px;
+    }
+
+    .toName, .date, .order, .fromName {
+        font-weight: bold;
+    }
+
+
+</style>
+
+<body>
+    <h2 class = "header">Letter To Dean</h2>
+    <div class = "letter">
+        <section class="address">
+
+            <p>
+                Flat 999 <br>
+                Apts., X Roads <br>
+                Gorakhpur, TS 00000
+            </p>
+    
+            <p class = "date">October 23, 2017</p>
+    
+            <p class = "recieverAdd">Fred Flintstone <br>
+                    Sales Manager <br>
+                    Cheese Specialists Inc. <br>
+                    456 Rubble Road <br>
+                    Rockville, IL 78777
+            </p>
+        </section>
+
+        <section class="mainScript">
+            <P>Dear <span class = "toName">Mr. Prabhu</span>,</P>
+    
+            <p>With reference to our telephone conversation today, I am writing to confirm your order for : <span class = "order">120 x Cheddar Deluxe Ref. No. 856</span>.</p>
+    
+            <p>The order will be shipped within <span class = >three days</span> via UPS and should arrive at your store in about 10 days.</p>
+    
+            <p>Please contact  us again if we can help in any way.</p>
+        </section>
+        
+        <p class = "salutation">
+            Yours sincerely <br>
+            <span class = "fromName">Tera order vaale</span> <br>
+            Director of Ken's Cheese House
+        </p>
+    </div>
+</body>
+</html>

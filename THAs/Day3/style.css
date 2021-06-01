@@ -23,6 +23,9 @@ body {
 .container {
     /* border: 2px solid rgb(137, 127, 239); */
     padding:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
 }
 
 .left, .right {
@@ -38,6 +41,6 @@ body {
 }
 
 .right {
-    width:50.5%;
+    width:56.5%;
     padding: 10px;
 }

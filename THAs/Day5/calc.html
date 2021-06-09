@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="calc.css">
+
+    <script src="calc.js" async></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" name="diplay" id="display" placeholder="Enter expression">
+        <table class="main-table">
+           <tr>
+               <td><input type="button" value="7" class="btn" onclick="display('7')"></td>
+               <td><input type="button" value="8" class="btn" onclick="display('8')"></td>
+               <td><input type="button" value="9" class="btn" onclick="display('9')"></td>
+               <td><input type="button" value="DEL" class="btn" onclick="display('del')"></td>
+           </tr>
+           <tr>
+               <td><input type="button" value="4" class="btn" onclick="display('4')"></td>
+               <td><input type="button" value="5" class="btn" onclick="display('5')"></td>
+               <td><input type="button" value="6" class="btn" onclick="display('6')"></td>
+               <td><input type="button" value="+" class="btn" onclick="display('+')"></td>
+           </tr>
+           <tr>
+               <td><input type="button" value="1" class="btn" onclick="display('1')"></td>
+               <td><input type="button" value="2" class="btn" onclick="display('2')"></td>
+               <td><input type="button" value="3" class="btn" onclick="display('3')"></td>
+               <td><input type="button" value="-" class="btn" onclick="display('-')"></td>
+           </tr>
+           <tr>
+               <td><input type="button" value="." class="btn" onclick="display('.')"></td>
+               <td><input type="button" value="0" class="btn" onclick="display('0')"></td>
+               <td><input type="button" value="/" class="btn" onclick="display('/')"></td>
+               <td><input type="button" value="*" class="btn" onclick="display('*')"></td>
+           </tr>
+           <tr c>
+               <td><input type="button" value="(" class="btn" onclick="display('(')"></td>
+               <td><input type="button" value=")" class="btn" onclick="display(')')"></td>
+               <td><input type="button" value="reset" class="btn" onclick="reset()"></td>
+               <td><input type="button" value="=" class="btn" onclick="solve()"></td>
+           </tr>
+        </table>
+    </div>
+</body>
+</html>

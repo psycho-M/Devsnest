@@ -11,21 +11,21 @@ function maxFrequency(arr) {
         return;
     }
     arr.sort();
-    // console.log(arr);
+    console.log(arr);
     let prev = arr[0], count = 0;
     let maxFreq = 0, maxFreqElement;
     for(let i = 0; i <= arr.length; i++) {
         if(arr[i] === prev) {
             count++;
-            // console.log("Curr Element in check " + arr[i]);
+            console.log("Curr Element in check " + arr[i]);
         } else if(arr[i] !== prev) {
             if(maxFreq < count) {
-                // console.log("prev element " + prev);
-                // console.log("Current Element " + arr[i]);
+                console.log("prev element " + prev);
+                console.log("Current Element " + arr[i]);
                 maxFreq = count;
                 maxFreqElement = prev;
-                // console.log("Current max Frequency", maxFreq);
-                // console.log("Current max = " + maxFreqElement);
+                console.log("Current max Frequency", maxFreq);
+                console.log("Current max = " + maxFreqElement);
             }
             count = 1;
         }

@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body {
+    height: 100vh;
+    background-image: linear-gradient(120deg, violet, indigo, maroon)
+}
+
 .main {
     /* position:relative; */
     position: relative;
@@ -13,7 +18,7 @@
 }
 
 .outerClock {
-    border: 4px solid grey;
+    border: 4px solid rgb(0, 0, 0);
     border-radius: 50%;
     height: 500px;
     margin: auto;
@@ -26,8 +31,8 @@
 }
 
 .clock {
-   border: 50px solid red;
-    box-shadow: inset 0 0 20px 2px grey;
+    border: 50px solid red;
+    box-shadow: inset 0 0 39px 53px lawngreen, inset 0 0 39px 123px yellow, inset 0 0 0px 193px violet;
     border-radius: 50%;
     margin: auto;
     height: 400px;
@@ -90,6 +95,7 @@
     font-size:24px;
     font-weight: bolder;
     font-family: monospace;
+    color: white;
 }
 
 .number3 {

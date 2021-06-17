@@ -13,7 +13,10 @@
 
     <style>
         body {
-            background-image: linear-gradient(90deg, blanchedalmond, maroon);
+            height: 100vh;
+            /* background-image: linear-gradient(0deg, violet, indigo, blue, green, yellow, red); */
+            /* background-image:radial-gradient(violet, indigo, blue, green, yellow, red); */
+            background-image: radial-gradient(white, black);
         }
 
         .heading {
@@ -26,19 +29,44 @@
         
         .submission-box {
             display: flex;
-            align-items:center;
-            justify-content: center;
-            flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100px;
         }
 
         .submission-btn {
+            position: relative;
             cursor: pointer;
             /* height: 2rem; */
             /* width: 3rem; */
             color: white;
             font-size: 40px;
             background-color: black;
-            margin: 1rem;
+            /* margin: 1rem; */
+            border-radius: 10%;
+            border-bottom: 0.3rem solid red;
+            padding: 4px;
+
+        }
+
+        /* button {
+            border-radius: 20%;
+        } */
+        .link {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .submission-btn:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s;
+        }
+
+        .submission-btn:active {
+            top:0.3rem;
+            border-bottom: 0;
+
+            transition: all 0.2s;
         }
 
         @keyframes textAnimation {
@@ -107,26 +135,26 @@
         <input type="button" value="Day6" class="submission-btn">
         <input type="button" value="Day7" class="submission-btn"> -->
 
-        <a href="./THAs/Day1/index.html" class="link">
+        <a href="./THAs/Day1/index.html" class="link" target="_blank">
             <button class="submission-btn">Day1</button>
         </a>
-        <a href="./THAs/Day2/index.html" class="link">
+        <a href="./THAs/Day2/index.html" class="link" target="_blank">
             <button class="submission-btn">Day2</button>
         </a>
-        <a href="./THAs/Day3/index.html" class="link">
+        <a href="./THAs/Day3/index.html" class="link" target="_blank">
             <button class="submission-btn">Day3</button>
         </a>
-        <a href="./THAs/Day4/index.html" class="link">
+        <a href="./THAs/Day4/index.html" class="link" target="_blank">
             <button class="submission-btn">Day4</button>
         </a>
-        <a href="./THAs/Day5/index.html" class="link">
+        <a href="./THAs/Day5/index.html" class="link" target="_blank">
             <button class="submission-btn">Day5</button>
         </a>
-        <a href="./THAs/Day6/index.html" class="link">
-            <button class="submission-btn">Day6</button>
+        <a href="./THAs/Day6/index.html" class="link" target="_blank">
+            <button class="submission-btn">Day6 (Only JS)</button>
         </a>
-        <a href="./THAs/Day7/index.html" class="link">
-            <button class="submission-btn">Day7</button>
+        <a href="./THAs/Day7/index.html" class="link" target="_blank">
+            <button class="submission-btn">Day7 (Only JS)</button>
         </a>
     </section>
 </body>

@@ -43,9 +43,38 @@
 .changeColor {
     background-color: transparent;
     border:0;
+    animation: changeColorAnimation 2s ease infinite;
 }
 
 .changeColor:hover {
     background: transparent;
     cursor: pointer;
+    animation: changeColorAnimation 2s ease infinite;
+}
+
+@keyframes changeColorAnimation {
+    0% {
+        background: violet;
+    }
+    14.28571% {
+        background: indigo;
+    }
+    28.57142% {
+        background: blue;
+    }
+    42.85713% {
+        background: green;
+    }
+    57.14284% {
+        background: yellow;
+    }
+    71.42855% {
+        background: orange;
+    }
+    85.71426% {
+        background: red;
+    }
+    100% {
+        background: violet;
+    }
 }

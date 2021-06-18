@@ -30,14 +30,17 @@
 }
 
 .box {
-    background-color: #e24f3f;
-    border: 0.1px solid rgb(236, 93, 77);
+    /* background-color: #e24f3f; */
+    background-color: black;
+    /* border: 0.1px solid rgb(236, 93, 77); */
+    border: 0.1px solid rgba(255, 255, 255, 0.15);
     z-index: 1;
 }
 
 .box:hover {
     cursor: pointer;
-    background-color: rgb(236, 93, 77);
+    /* background-color: rgb(236, 93, 77); */
+    background-color: rgb(103 95 95);
 }
 
 .changeColor {

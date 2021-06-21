@@ -16,6 +16,15 @@ let library = [
     }
 ]
 
-console.log(library);
+library.forEach(item => {
+    console.log(item.author + "\n" + item.title + "\n" + item.libraryID)
+})
+
+// console.log(library);
 console.log("After Sort: ");
-console.log(library.sort((a, b) => a.libraryID - b.libraryID));
+library.sort(function(a, b) {
+    return b.libraryID - a.libraryID;
+});
+library.forEach(item => {
+    console.log(item.author + "\n" + item.title + "\n" + item.libraryID)
+})

@@ -16,11 +16,11 @@ seats.forEach(item => {
     item.addEventListener('click', () => {
         if(item.classList.contains("booked-seat")) {
             item.classList.remove("booked-seat");
-            remainingSeatsValue = ++remainingSeatsNumber;
+            remainingSeatsValue.textContent = ++remainingSeatsNumber;
             bookedSeatsValue.textContent = --bookedSeatsNumber;
         } else {
             item.classList.add("booked-seat");
-            remainingSeatsValue = --remainingSeatsNumber;
+            remainingSeatsValue.textContent = --remainingSeatsNumber;
             bookedSeatsValue.textContent = ++bookedSeatsNumber;
         }
     })

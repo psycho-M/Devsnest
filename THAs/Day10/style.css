@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+}
+
+.tiles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width:50%;
+    gap: 1%;
+    /* perspective: 1000px; */
+
+}
+
+.card {
+    box-sizing: border-box;
+    /* height: 100px;
+    width: 100px; */
+    
+    /* background-color: aqua; */
+    /* margin:1px; */
+    height: 100%;
+    width: 100%;
+    transition: transform 0.25s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    perspective: 150px;
+}
+
+.card-face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* border: 1px solid black; */
+    border: 0.5px solid black;
+}
+
+.front {
+    background: red;
+    border-radius: 10%;
+    transform: rotateY(180deg);
+}
+
+.back {
+    background: blue;
+    border-radius: 10%;
+    transform: rotate(-180deg)
+}
+
+.card.is-flipped {
+    transform: rotateY(-180deg);
+}
+
+.number {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xxx-large;
+}
+
+.card.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.front.found {
+    background: green;
+}
+
+

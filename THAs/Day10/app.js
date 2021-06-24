@@ -1,5 +1,5 @@
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-
+let numberOfMoves = 0;
 let assignedBlocks = [];
 
 function getRandom(max) {
@@ -37,18 +37,30 @@ let cards = document.querySelectorAll(".card");
 let cardsFlipped = 0;
 let flippedElements = [];
 let removeClick = [];
+let cardsFound = [];
 
 cards.forEach(card => {
     card.addEventListener('click', flipCard);
 });
 
 function flipCard() {
-    if(this.classList.contains("is-flipped")) {
-        this.classList.remove("is-flipped");
-    } else {
+
+    if(cardsFound.includes(this)) {
+        return;
+    }
+
+    if(flippedElements.includes(this)) {
+
+    } // else if(this.classList.contains("is-flipped")) {
+    //     this.classList.remove("is-flipped");
+    //     flippedElements.pop(this);
+    //     console.log(flippedElements);
+    //}
+    else {
         this.classList.add("is-flipped");
         // cardsFlipped++;
         flippedElements.push(this);
+        console.log(flippedElements);
     }
 
     if(flippedElements.length > 2) {
@@ -56,7 +68,7 @@ function flipCard() {
     }
 
     if(flippedElements.length === 2) {
-        setTimeout(checkCards, 500);
+        setTimeout(checkCards, 400);
     }
 }
 
@@ -68,13 +80,18 @@ function flipCard() {
 // })
 
 function checkCards() {
+    document.querySelector(".moves").textContent =  ++numberOfMoves;
     let card1 = flippedElements[0];
     let card2 = flippedElements[1];
     if (card1.innerHTML === card2.innerHTML) {
             // removeEventListener(card1);
             // removeEventListener(card2);
-            card1.classList.add("found");
-            card2.classList.add("found");
+            cardsFound.push(card1);
+            cardsFound.push(card2);
+            if(cardsFound.length === 16) {
+                document.getElementById("game-end").classList.add("game-won");
+            }
+            console.log(cardsFound);
             flippedElements = [];
             // cardsFlipped = 0;
     } else {
@@ -84,19 +101,6 @@ function checkCards() {
         // cardsFlipped = 0;
     }
 }
-
-removeClick.forEach(card => {
-    card.removeEventListener('click', removeListener);
-})
-
-function removeListener() {
-        // card.classList.add("hide");
-        // card.classList.remove("is-flipped");
-        // this.querySelector(".front").style.bgcolor = "green";
-        
-}
-
-
 
 // while(true) {
 //     let flippedElements = document.querySelectorAll(".is-flipped");

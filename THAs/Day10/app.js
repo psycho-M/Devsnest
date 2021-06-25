@@ -92,6 +92,11 @@ function checkCards() {
                 document.getElementById("game-end").classList.add("game-won");
             }
             console.log(cardsFound);
+
+            card1.getElementsByClassName("front")[0].classList.add("found");
+            card2.getElementsByClassName("front")[0].classList.add("found");
+
+
             flippedElements = [];
             // cardsFlipped = 0;
     } else {

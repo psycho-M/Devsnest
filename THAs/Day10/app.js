@@ -93,8 +93,11 @@ function checkCards() {
             }
             console.log(cardsFound);
 
-            card1.getElementsByClassName("front")[0].classList.add("found");
-            card2.getElementsByClassName("front")[0].classList.add("found");
+            card1.getElementsByClassName("front")[0].style.background = "rgb(112 195 110)"
+            card2.getElementsByClassName("front")[0].style.background = "rgb(112 195 110)"
+            
+            // card1.getElementsByClassName("front")[0].classList.add("found");
+            // card2.getElementsByClassName("front")[0].classList.add("found");
 
 
             flippedElements = [];

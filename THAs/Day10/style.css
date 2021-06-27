@@ -83,7 +83,7 @@ body {
     transition: transform 0.25s;
     transform-style: preserve-3d;
     cursor: pointer;
-    perspective: 650px;
+    perspective: 1000px;
 }
 
 .card-face {

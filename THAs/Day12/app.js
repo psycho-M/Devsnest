@@ -43,7 +43,7 @@ function addToDo() {
         let buttons = newTodo.querySelectorAll('button');
         console.log(buttons);
         buttons.forEach(addFunctionality);
-        todoInput.value = "";
+        todoInput.value = ""
 }
 
 function addFunctionality(btn) {

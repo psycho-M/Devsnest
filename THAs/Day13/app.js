@@ -60,7 +60,7 @@ function fetchFromTenor(tenorGifUrl) {
             let gifs = data.results;
             console.log(gifs);
             for (let gif of gifs) {
-                let currGifUrl = gif.media[0].tinygif.url;
+                let currGifUrl = gif.media[0].gif.url;
                 console.log(currGifUrl);
                 let currGifEl = document.createElement("img");
                 currGifEl.src = currGifUrl;

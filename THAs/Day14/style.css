@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background:rgb(6, 29, 107);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(190, 124, 124);
+    width: 70%;
+    height: 70%;
+    
+}
+
+
+.cursor {
+    position: absolute;
+    height: 30px;
+    width:20px;
+    /* background: rgb(6, 29, 107); */
+    display: block;
+    pointer-events: none;
+    /* border-radius: 50%; */
+}
+
+
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    transition: all 0.25s;
+    background-color: black;
+}
+  
+.line{
+    display: block;
+    position: absolute;
+    left: 15px;
+    width: 18px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.25s;
+}
+
+  
+  
+.hamburger:hover  {
+    background: rgb(173, 0, 0);
+    border: 2px solid black;
+}
+  
+.line1 {
+    top: 23px;
+    transform: translateY(-3px);
+}
+  
+.line2 {
+    bottom: 23px;
+    transform: translateY(3px);
+}
+  
+.open {
+    transform: rotate(90deg);
+}
+  
+.open .line1 {
+    transform: 
+      rotate(45deg) 
+      translateY(0px);
+}
+  
+.open .line2 {
+    transform: rotate(-45deg) translateY(0px);
+}
+
+.white-bg {
+    background: white;
+}

@@ -19,7 +19,7 @@
 
 .meme-card {
     border: 2px solid black;
-    width: 50%;
+    /* width: 50%; */
     box-shadow: 10px 10px 10px 5px grey, 0 0 10px 3px rgb(55, 47, 63);
     margin: 10px;
 }
@@ -40,28 +40,3 @@
     text-align: center;
 }
 
-.chess-board{
-    display: grid;
-    grid-template-rows:repeat(8,1fr);
-    border: 1rem solid rgb(243, 101, 101);
-    height: 400px;
-    width: 400px;
-}
-
-.chess-row{
-    display:flex;
-    border:1px solid black;
-}
-
-.chess-square{
-    border-right: 1px solid black;
-    height:100%;
-    width:100%;
-}
-
-.chess-row:nth-child(even) 
-.chess-square:nth-child(even),
-.chess-row:nth-child(odd) 
-.chess-square:nth-child(odd){
-    background:rgb(255, 0, 0)
-}

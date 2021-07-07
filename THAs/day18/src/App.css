@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.chess-board{
+  display: grid;
+  grid-template-rows:repeat(8,1fr);
+  border: 1rem solid rgb(243, 101, 101);
+  height: 400px;
+  width: 400px;
+}
+
+.chess-row{
+  display:flex;
+  /* border:1px solid black; */
+}
+
+.chess-square{
+  border-right: 1px solid black;
+  height:100%;
+  width:100%;
+  border: 1px solid black;
+}
+
+.chess-row:nth-child(even) 
+.chess-square:nth-child(even),
+.chess-row:nth-child(odd) 
+.chess-square:nth-child(odd){
+  background:rgb(255, 0, 0)
+}

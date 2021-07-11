@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width:100vw;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+  font-family:'Courier New', Courier, monospace;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  width: 70%;
+  height: 70%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-shadow: 7px 8px 18px 6px #3e0e38;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-list {
+  list-style-type: none;
+  margin-left: 10px
+}
+
+.item {
+  background: #b3cde0;
+  margin: 10px 0;
+  width: 90%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px grey ;
+}
+
+.item-content {
+  text-align: center;
+  padding: 5px;
+}
+
+.item h1 {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 5px;
 }

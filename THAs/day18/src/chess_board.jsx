@@ -13,7 +13,7 @@ function Row() {
     }
 
     return(
-        <div className='chess-row'>{squares}</div>
+        <div className="chess-row">{squares}</div>
     );
     
 }
@@ -29,6 +29,7 @@ function ChessBoard() {
     return(
         <div className="chess-board">
             {rows}
+            <Box1 />
         </div>
     );
 }

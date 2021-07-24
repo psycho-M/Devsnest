@@ -8,12 +8,6 @@ function App() {
     const [templates, setTemplates] = useState([]);
     const [meme, setMeme] = useState(null);
 
-    const [form, setForm] = useState({
-        templateID: '',
-        userName: 'teasty',
-        password: ''
-    });
-
     useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
         .then(response => response.json())

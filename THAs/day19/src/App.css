@@ -35,4 +35,5 @@
   padding: 2px 5px;
   background: rgb(187, 181, 181);
   cursor: pointer;
+  user-select: none;
 }

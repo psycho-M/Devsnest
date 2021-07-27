@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import './App.css';
 
 class Counter extends React.Component {
@@ -26,6 +26,19 @@ class Counter extends React.Component {
   }
 }
 
+//using useReducer for the counter
+function Counter2() {
+  const [sum, dispatch] = useReducer((state, action) => {
+    return state + action;
+  }, 0);
+
+  return (
+    <div className="counter-box" onClick={() => dispatch(1)}>
+        <div className="counter">{sum}</div>
+      </div>
+  );
+}
+
 class CounterContainer extends React.Component {
   // {let counters = [];
   // for(let i = 0; i < 5; i++) {
@@ -35,7 +48,7 @@ class CounterContainer extends React.Component {
   addCounters() {
     let counters = [];
     for(let i = 0; i < 5; i++) {
-      counters.push(<Counter key={i} />);
+      counters.push(<Counter2 key={i} />);
     }
     return counters;
   }

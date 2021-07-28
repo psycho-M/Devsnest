@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useEffect } from "react";
 import AuthContext from "./authContext";
 import AuthReducer from "./authReducer";
 import { REGISTER_SUCCESS, LOGIN_SUCCESS, LOGOUT, SET_LOADING } from "../types";
@@ -42,6 +42,10 @@ export default function AuthState(props) {
             type: LOGOUT,
         }));
     };
+
+    useEffect(() => {
+        sleep(1500).then(() => setLoading(false));
+    }, []);
 
     return (
         <AuthContext.Provider

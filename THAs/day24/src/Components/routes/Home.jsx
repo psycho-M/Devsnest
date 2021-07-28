@@ -4,6 +4,7 @@ import AuthContext from "../auth/authContext"
 
 export default function Home() {
     const authContext = useContext(AuthContext);
+    console.log(authContext);
     const {login, isAuthenticated, logout, loading} = authContext;
     
     return(

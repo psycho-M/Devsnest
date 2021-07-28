@@ -1,6 +1,6 @@
 import {REGISTER_SUCCESS, LOGIN_SUCCESS, LOGOUT, SET_LOADING} from "../types"
 
-export default function AuthReducer({state, action}) {
+export default function AuthReducer(state, action) {
     switch(action.type) {
         case REGISTER_SUCCESS:
         case LOGIN_SUCCESS:

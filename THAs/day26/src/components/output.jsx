@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 
 function Output() {
 
-    console.log("state", useSelector(state => state.user));
+    console.log("state: ", useSelector(state => state.user));
     const user = useSelector(state => state.user);
     return (
         <section>

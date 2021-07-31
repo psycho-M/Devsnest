@@ -5,8 +5,8 @@ import Output from './output';
 function App() {
   return (
     <div className="App">
-      <Input />
-      <Output />
+      <Input  key={0}/>
+      {/* <Output key = {1} /> */}
     </div>
   );
 }

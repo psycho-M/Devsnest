@@ -19,7 +19,13 @@ const updateLocData = (location) => {
     };
 };
 
-export { updateLocData, updateLocation };
+const toggleTheme = () => {
+    return {
+        type: 'TOGGLE_THEME',
+    };
+};
+
+export { updateLocData, updateLocation, toggleTheme };
 
 // {
 //     type: 'UPDATE_LOC_DATA',

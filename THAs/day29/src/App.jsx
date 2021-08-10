@@ -3,6 +3,8 @@ import './css/App.css';
 // import { useState, useEffect } from 'react';
 import Form from './components/Form';
 import WeatherCard from './components/WeatherCard';
+import { useSelector } from 'react-redux';
+import ToggleTheme from './components/ToggleTheme';
 
 function App() {
   // const apiKey = '30a3e9cc1a084b70b01124944210908';
@@ -18,8 +20,11 @@ function App() {
   //   })
   // }
 
+  const theme = useSelector(state => state.theme);
+  console.log(theme);
   return (
-    <section className='App'>
+    <section className={theme ? 'App' : 'App light'}>
+      <ToggleTheme />
       <Form />
       <WeatherCard />
     </section>

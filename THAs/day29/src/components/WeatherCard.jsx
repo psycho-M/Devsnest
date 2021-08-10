@@ -2,12 +2,13 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 export default function WeatherCard() {
+    const theme = useSelector(state => state.theme);
     const locData = useSelector(state => state.locData);
     return (
         <section className="container">
             <section className="row">
                 <section className="offset-md-4 col-12 col-md-4 weather">
-                    <section className="card">
+                    <section className={theme ? 'card' : 'card light'}>
                         {locData.location ? (
                             <section>
                                 {/* <h2>{locData.location.name}</h2> */}

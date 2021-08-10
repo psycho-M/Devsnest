@@ -4,6 +4,7 @@ import {updateLocation, updateLocData} from '../actions';
 
 export default function Form() {
     const location = useSelector(state => state.location);
+    const theme = useSelector(state => state.theme);
     const dispatch = useDispatch();
     return (
         <section className="container">
@@ -17,7 +18,7 @@ export default function Form() {
                         }}
                     />
                     <button
-                        className="btn btn-primary"
+                        className={theme ? "btn btn-light" : "btn btn-dark"}
                         onClick={() => {
                             dispatch(updateLocData(location));
                         }}

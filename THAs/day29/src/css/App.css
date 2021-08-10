@@ -13,6 +13,11 @@
   height: 100vh;
 }
 
+.App.light {
+  color: black;
+  background-color: white
+}
+
 .form {
   margin-top: 100px;
   display: flex;
@@ -40,7 +45,9 @@
   
 }
 
-
+.card.light {
+  background-color: rgb(255, 255, 255);
+}
 
 .card img {
   width: 30%;
@@ -80,4 +87,10 @@
 
 .whp .data .unit {
   font-size: 0.8rem;
+}
+
+.toggle-theme {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }

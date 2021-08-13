@@ -21,12 +21,10 @@ export const Todos = () => {
                             title: input,
                             done: false
                         }]);
-                        setInput('');
                     }}>Add</button>
 
                     <button onClick={() => {
                         setTodos([]);
-                        setInput('');
                     }}>Clear</button>
                 </section>
 

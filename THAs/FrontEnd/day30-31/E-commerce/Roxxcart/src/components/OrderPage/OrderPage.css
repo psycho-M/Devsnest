@@ -1,0 +1,173 @@
+.main-order-page{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+}
+.main-order-page .order-page{
+    width: 96%;
+    color: black;
+    margin-right: 5rem;
+}
+.main-order-page .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.main-order-page h3{
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+.main-order-page h4{
+    color: black;
+    margin: 1rem;
+}
+.main-order-page .login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.5%;
+    margin: 0.5rem;
+    text-align: center;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 2rem;
+    background-color: #FBB03B;
+}
+
+.main-order-page .signup-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.5%;
+    margin: 0.5rem;
+    text-align: center;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(185, 182, 182);
+}
+
+.main-order-page .login-signup{
+    display: flex;
+}
+
+.main-order-page .shipping-info-form{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-order-page .shipping-info-form input{
+    height: 3.4rem;
+    width: 14.5rem;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    border-radius: 2rem;
+    border: 1px solid gray;
+    outline: none;
+}
+.main-order-page .payment-delivery{
+    margin: 0 2rem;
+}
+.main-order-page .payment{
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-order-page .payment button{
+    padding: 0.6rem;
+    height: 2.5rem;
+    width:6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: 1px solid gray;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-order-page .payment button img{
+    height: 100%;
+    width: 100%;
+}
+
+.main-order-page .cart-items{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.main-order-page .cart-item{
+    display: flex;
+    height: 2rem;
+    margin: 1.5rem;
+    margin-left: 0;
+}
+
+.main-order-page .cart-item img{
+    margin-right: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.main-order-page .total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 2rem;
+    padding: 1%;
+    border-radius: 2rem;
+    background-color: rgb(211, 210, 210);
+    margin: 5rem;
+}
+
+.main-order-page .end{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.main-order-page .payment-proceed{
+    margin-right: 5rem;
+    display: flex;
+}
+.main-order-page .continue,.main-order-page .proceed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    height: 2rem;
+    width: 12rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(185, 182, 182);
+}
+
+.main-order-page .proceed{
+    background-color: #FBB03B;
+    border: none;
+}
+
+.main-order-page .form-control{
+    color: gray;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 0.9rem;
+}

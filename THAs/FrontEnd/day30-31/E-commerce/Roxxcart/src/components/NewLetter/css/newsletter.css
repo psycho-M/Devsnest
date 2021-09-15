@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.news-letter {
+    margin-top: 22%;
+    width: 100%;
+    display: flex;
+    background-image: url('../assets/25793554-seamless-background-envelope-newsletter-style-illustration-design.jpg');
+    height: 150px;
+    background-size: cover;
+}
+
+.description {
+    width: 40%;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: rgba(255, 253, 253, 0.74);
+}
+
+.input {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input input {
+    border-radius: 50px;
+    width: 70%;
+    padding: 1.1rem 1.7rem;
+    height: 50%;
+    outline-width: 0;
+}
+
+.input input:focus {
+    border: 2px solid black;
+}
+
+.input button {
+    background-color: #fbb03b;
+    padding: 0rem 1.5rem;
+    border-radius: 50px;
+    height: 50%;
+    max-width: 20%;
+    overflow: hidden;
+}

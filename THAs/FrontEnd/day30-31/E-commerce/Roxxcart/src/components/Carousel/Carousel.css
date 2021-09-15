@@ -1,0 +1,12 @@
+.carousel-component {
+    text-align: center;
+    margin-top: 10rem
+}
+
+.carousel-component img {
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    object-fit: cover;
+    /* margin-left: 25vw; */
+}

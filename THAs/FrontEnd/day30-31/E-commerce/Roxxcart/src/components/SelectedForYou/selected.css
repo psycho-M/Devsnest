@@ -1,0 +1,52 @@
+.slides{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 30vh;
+}
+
+button{
+    font-size: larger;
+    margin: 1rem;
+    background: transparent;
+    border: none;
+}
+.product-slides{
+    padding: 0.5rem;
+    width: 15rem;
+    height: 45vh;
+    margin: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-slides p, h4{
+    color: gray;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+.product-slides img{
+    width: 15rem;
+    height: 35vh;
+    margin: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rec.rec-arrow {
+    background-color: transparent;
+    outline: none;
+}
+
+.rec-arrow[disabled] {
+    transform: scale(0);
+}
+
+.rec .rec-pagination{
+    visibility: hidden;
+}

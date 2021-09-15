@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13fd1959.chunk.css",
+    "main.js": "/static/js/main.28184e6f.chunk.js",
+    "main.js.map": "/static/js/main.28184e6f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9f235b22.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9f235b22.js.map",
+    "static/css/2.818011ed.chunk.css": "/static/css/2.818011ed.chunk.css",
+    "static/js/2.d682e789.chunk.js": "/static/js/2.d682e789.chunk.js",
+    "static/js/2.d682e789.chunk.js.map": "/static/js/2.d682e789.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.13fd1959.chunk.css.map": "/static/css/main.13fd1959.chunk.css.map",
+    "static/js/2.d682e789.chunk.js.LICENSE.txt": "/static/js/2.d682e789.chunk.js.LICENSE.txt",
+    "static/media/newsletter.css": "/static/media/25793554-seamless-background-envelope-newsletter-style-illustration-design.f210da86.jpg",
+    "static/media/logo.48e5bedd.svg": "/static/media/logo.48e5bedd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f235b22.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.d682e789.chunk.js",
+    "static/css/main.13fd1959.chunk.css",
+    "static/js/main.28184e6f.chunk.js"
+  ]
+}

@@ -1,0 +1,13 @@
+PUB-SUB & Streams in REDIS
+To simulate a chat application using PUB_SUB,
+
+-> Create a Database on Cloud ( Upstash will get the work done)
+
+-> Connect to the database via Redis
+
+-> Publish a channel on that database and Subscribe to it as well to see the published messages.
+
+
+And, we're done!
+
+Streams PUBSUB

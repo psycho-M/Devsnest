@@ -13,16 +13,22 @@ const slash = (req, res) => {
 const test = (req, res) => {
     // res.json({ a: 1 }); //sends only json. Used for specifity
 
+    //res.sendStatus() is like res.send(), both are last thing in the flow, and behave like return.
+    //To improve that we use res.status(), and then res.send()/res.json(), etc.
+
+    res.status(200);
+    res.send('database not connecting');
     // res.sendStatus(200); //200 means everything wend okay
     // res.sendStatus(201); //201 means updated successfully
     // res.sendStatus(400); //400 means error from front-end, i.e., error from client side
     // res.sendStatus(500); //500 means error from server side
     //when we send status, we send number and info. related to it
     // res.send(); // consider this as return statement, so this is last line to be executed. Anything after this is ignored
-    res.status(200).send('database not connecting'); //pipelining => one function after another
+
+    // res.status(200).send('database not connecting'); //pipelining => one function after another
 }
 
-app.get('/', test);
+app.get('/', test, test, test); //in arguments we can pass any no. of funcitons as parameters
 
 app.get('/products', (req, res) => {
     // req.query = {
@@ -33,6 +39,7 @@ app.get('/products', (req, res) => {
 })
 
 //query params /products?limit=50&q=something
+//for variables in query with '&' term, we use encodeURIComponenet(<data>) to get the suitable uri format for it, as whenever the browser is & it'll automatilcally go consider starting of a new variable
 
 // app.get('/ab?cd', (req, res) => {
 //     res.send('works on acd and abcd, question mark after b says that b is optional'); //works on acd and abcd, question mark after b says that b is optional
@@ -63,8 +70,6 @@ app.get('/user/:userId/books/:bookId', (req, res) => {
     res.send(req.params); //saved in req.params
     console.log(req.query);
 })
-
-
 
 
 

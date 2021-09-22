@@ -8,7 +8,7 @@ function App() {
   const [locData, setLocData] = useState({});
 
   const updateLocData = () => {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
